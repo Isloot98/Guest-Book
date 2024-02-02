@@ -30,7 +30,7 @@ search.addEventListener('change', async (e) => {
 });
 
 const searchForGif = async (input) => {  
-  const response = await fetch(`http://localhost:2020/search?query=${encodeURIComponent(input)}`);
+  const response = await fetch(`https://guest-book-car0.onrender.com/search?query=${encodeURIComponent(input)}`);
   if (response.ok) {
     const data = await response.json();
     return data;
@@ -69,7 +69,7 @@ form.addEventListener("submit", async (e) => {
 
     
 
-    const response = await fetch('http://localhost:2020/messages', {
+    const response = await fetch('https://guest-book-car0.onrender.com/messages', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -91,7 +91,7 @@ form.addEventListener("submit", async (e) => {
 
 form.addEventListener('reset', async (e) => {
   try {  e.preventDefault();
-  const reset = await fetch('http://localhost:2020/messages', {
+  const reset = await fetch('https://guest-book-car0.onrender.com/messages', {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
@@ -114,7 +114,7 @@ form.addEventListener('reset', async (e) => {
 
 
 const fetchMessages = async () => {
-  const messages = await fetch('http://localhost:2020/messages');
+  const messages = await fetch('https://guest-book-car0.onrender.com/messages');
   let result = await messages.json();
 return result
 }
@@ -154,7 +154,7 @@ const displayMessages = async () => {
           e.preventDefault();
 
           try {
-            const response = await fetch(`http://localhost:2020/messages/${message.id}`, {
+            const response = await fetch(`https://guest-book-car0.onrender.com/messages/${message.id}`, {
               method: 'DELETE',
               headers: {
                 'Content-Type': 'application/json'

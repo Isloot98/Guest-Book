@@ -157,3 +157,46 @@ transform: scale(1.2);
 img {
   border-radius: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .form-div {
+    width: 80%;
+  }
+
+  #form {
+    width: 80%;
+  }
+
+  #search-result-container {
+display: flex;
+flex-direction: column;  }
+
+  #result {
+display: flex;
+flex-direction: column;    
+width: 100%;
+  }
+
+  #result > div {
+    width: 100%;
+  }
+
+  #result > div > img {
+    width: 100%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1280px) {
+  #search-result-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #result {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+
+
+}
