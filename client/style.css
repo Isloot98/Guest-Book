@@ -1,0 +1,159 @@
+body {
+  background-color: #5f6469;
+
+}
+
+#app {
+  background-color: #5f6469;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-div {
+  background-color: #d0d3d6; 
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: 25rem; 
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da; 
+  margin-bottom: 10px;
+}
+
+button[type="button"],
+button[type="submit"],
+button[type="reset"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; 
+  color: #ffffff; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #0056b3; 
+}
+
+#search-result-container {
+  margin-top: 20px;
+}
+
+#result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 5rem;
+  margin-top: 20px;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+  
+}
+
+#result > div {
+  background-color: #d0d3d6;
+  border-radius: 1rem;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#result > div > h3 {
+  width: 100%; 
+  text-align: center; 
+  word-wrap: break-word;
+  margin: 0; 
+  padding: 1rem; 
+}
+
+#result > div > button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: red;
+  color: #d0d3d6;
+  border-radius: 1rem;
+  width: 8rem;
+  height: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+#result > div > button:hover {
+ background-color: darkred;
+ cursor: pointer;
+}
+
+#result > div > img {
+  max-width: 28rem;
+}
+
+#search-but {
+  margin-top: -2.5rem;
+  margin-bottom: 3rem;
+}
+
+#submit {
+  margin-bottom: 0.2rem;
+}
+
+::-webkit-scrollbar {
+  height:5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #82828a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6d75e8;
+}
+
+
+#search-result-container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 1rem;
+  
+
+}
+
+#search-result-container > img {
+  transition: transform 0.3s ease;
+  max-width: 28rem;
+}
+
+
+#search-result-container > img:hover {
+cursor: pointer;
+transform: scale(1.2);
+}
+
+img {
+  border-radius: 1rem;
+}
